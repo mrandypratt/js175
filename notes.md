@@ -1,6 +1,10 @@
 # Introduction to Networked Applications
 
-**Networked Applications** are applications which provide a service to individual end-users so that different users accessing the application will receive data or content that is tailored specifically to them.
+## Networked applications
+**Networked Applications** are:
+- Broadly defined as an application which uses a network connection to transfer data.
+- More narrowly defined as applications which provide a service to individual end-users so that different users accessing the application will receive data or content that is tailored specifically to them.
+
 In leiu of pre-defined logic or static pages, networked applications provide *dynamically* generated content.
 
 ## Static Content
@@ -61,7 +65,10 @@ Recently, much of the dynamic content responsibility is placed on client in orde
 - Native Mobile apps
 - Browser continuing sophistication.
 
-# HTML
+# Application Logic
+
+## Server-side Processing
+
 
 
 
