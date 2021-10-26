@@ -1,9 +1,19 @@
 const HTTP = require('http');
-const PORT = 8080;
+const PORT = 3001;
 
 const SERVER = HTTP.createServer((req, res) => {
-  console.log(req.method);
-  console.log(req.url)
+  let method = req.method;
+  let path = req.url;
+
+  if (path === '/favicon.ico') {
+    res.statusCode = 404;
+    res.end();
+  } else {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.write(`${method} ${path}\n`);
+    res.end();
+  }
 });
 
 SERVER.listen(PORT, () => {
